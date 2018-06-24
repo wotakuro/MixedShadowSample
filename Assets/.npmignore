@@ -1,0 +1,10 @@
+/ImageTemplates*
+/PostProcessing*
+/SampleScenes*
+/TestbedPipelines*
+/Tests*
+/ScriptableRenderPipeline/HDRenderPipeline*
+/.collabignore
+/.gitignore
+/.gitmodules
+/SRPMARKER*

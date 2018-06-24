@@ -1,0 +1,11 @@
+{
+	"name": "com.unity.render-pipelines.lightweight",
+	"description": "Lightweight Render Pipeline for Unity.",
+	"displayName": "Lightweight Render Pipeline",
+    "subDependencies": [
+        "com.unity.render-pipelines.core"
+    ],
+    "dependencies": {
+        "com.unity.shadergraph": "1.1.8-preview"
+    }
+}
