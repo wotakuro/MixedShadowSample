@@ -75,6 +75,7 @@ namespace App
         private SerializedProperty m_HDR;
         private SerializedProperty m_MSAA;
         private SerializedProperty m_NoSelfShadowLayerMask;
+        private SerializedProperty m_RealTimeShadowColor;
 
         void OnEnable()
         {
@@ -93,6 +94,7 @@ namespace App
             m_HDR = serializedObject.FindProperty("m_SupportsHDR");
             m_MSAA = serializedObject.FindProperty("m_MSAA");
             m_NoSelfShadowLayerMask = serializedObject.FindProperty("m_NoSelfShadowLayerMask");
+            m_RealTimeShadowColor = serializedObject.FindProperty("m_RealTimeShadowColor");
 
             m_ShowSoftParticles.valueChanged.AddListener(Repaint);
             m_ShowSoftParticles.value = m_RequireSoftParticlesProp.boolValue;
@@ -161,8 +163,9 @@ namespace App
             EditorGUILayout.LabelField(Styles.customeMenu, EditorStyles.boldLabel);
             EditorGUI.indentLevel++;
             int layerMask = GuiLayerMask(m_NoSelfShadowLayerMask.intValue);
-
             m_NoSelfShadowLayerMask.intValue = layerMask;
+
+            EditorGUILayout.PropertyField(m_RealTimeShadowColor);
 
             EditorGUI.indentLevel--;
 

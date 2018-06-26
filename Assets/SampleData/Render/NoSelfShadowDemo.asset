@@ -27,4 +27,5 @@ MonoBehaviour:
   m_Cascade2Split: 0.08661974
   m_Cascade4Split: {x: 0.067, y: 0.2, z: 0.467}
   m_NoSelfShadowLayerMask: 6656
+  m_RealTimeShadowColor: {r: 1, g: 0, b: 0, a: 0}
   m_ResourcesAsset: {fileID: 11400000, guid: aac5a08c32552a14c89394b703f1978a, type: 2}

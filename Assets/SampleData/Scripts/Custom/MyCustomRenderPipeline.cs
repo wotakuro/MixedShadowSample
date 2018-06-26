@@ -199,6 +199,8 @@ namespace App
         private int m_BlitTexID = Shader.PropertyToID("_BlitTex");
 
         private CopyTextureSupport m_CopyTextureSupport;
+        // Add for Edit Realtime shadow color
+        private int m_RealTimeShadowColorProp;
 
         public MyCustomRenderPipeline(MyCustomRenderPipelineAsset asset)
         {
@@ -243,6 +245,8 @@ namespace App
             CameraRenderTargetID.copyColor = Shader.PropertyToID("_CameraCopyColorRT");
             CameraRenderTargetID.depth = Shader.PropertyToID("_CameraDepthTexture");
             CameraRenderTargetID.depthCopy = Shader.PropertyToID("_CameraCopyDepthTexture");
+            // add for realtime shadow color
+            m_RealTimeShadowColorProp = Shader.PropertyToID("_RealTimeShadowColor");
 
             m_ScreenSpaceShadowMapRT = new RenderTargetIdentifier(m_ScreenSpaceShadowMapRTID);
 
@@ -335,6 +339,9 @@ namespace App
         {
             base.Render(context, cameras);
             RenderPipeline.BeginFrameRendering(cameras);
+
+            // set realtime shadow color
+            Shader.SetGlobalColor(m_RealTimeShadowColorProp, m_Asset.RealiTimeShadowColor);
 
             GraphicsSettings.lightsUseLinearIntensity = true;
             SetupPerFrameShaderConstants();

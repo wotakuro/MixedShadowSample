@@ -73,6 +73,7 @@ namespace App
         [SerializeField] private float m_Cascade2Split = 0.25f;
         [SerializeField] private Vector3 m_Cascade4Split = new Vector3(0.067f, 0.2f, 0.467f);
         [SerializeField] private int m_NoSelfShadowLayerMask = 0;
+        [SerializeField] private Color m_RealTimeShadowColor;
 
         [SerializeField]
         private LightweightPipelineResources m_ResourcesAsset;
@@ -358,6 +359,13 @@ namespace App
             get
             {
                 return m_NoSelfShadowLayerMask;
+            }
+        }
+        public Color RealiTimeShadowColor
+        {
+            get
+            {
+                return m_RealTimeShadowColor;
             }
         }
     }

@@ -40,14 +40,15 @@ Shader "App/ShadowTestShader"
 			}
 
 			sampler2D _MainTex;
+            half4 _RealTimeShadowColor;
 
 			fixed4 frag(v2f i) : SV_Target
 			{
 				fixed4 col = tex2D(_MainTex, i.uv);
 				fixed shadow = SHADOW_ATTENUATION(i);
+                shadow = clamp(shadow + 0.5, 0.0,1.0);
 
-				col.rgb *= clamp(shadow + 0.5, 0.0,1.0);
-
+				col.rgb = col.rgb * shadow + _RealTimeShadowColor * (1.0 - shadow);
 				return col;
 			}
 			ENDCG

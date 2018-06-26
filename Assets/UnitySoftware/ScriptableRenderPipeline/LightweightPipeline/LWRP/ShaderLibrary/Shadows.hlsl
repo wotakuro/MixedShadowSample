@@ -16,6 +16,8 @@
 SCREENSPACE_TEXTURE(_ScreenSpaceShadowMap);
 SAMPLER(sampler_ScreenSpaceShadowMap);
 
+half4 _RealTimeShadowColor;
+
 TEXTURE2D_SHADOW(_ShadowMap);
 SAMPLER_CMP(sampler_ShadowMap);
 

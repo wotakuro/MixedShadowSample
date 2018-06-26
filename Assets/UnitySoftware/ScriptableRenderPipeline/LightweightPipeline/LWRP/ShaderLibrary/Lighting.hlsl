@@ -437,6 +437,8 @@ half3 SubtractDirectMainLightFromLightmap(Light mainLight, half3 normalWS, half3
     // 2) Allows user to define overall ambient of the scene and control situation when realtime shadow becomes too dark.
     half3 realtimeShadow = max(subtractedLightmap, _SubtractiveShadowColor.xyz);
     realtimeShadow = lerp(bakedGI, realtimeShadow, shadowStrength);
+    realtimeShadow = realtimeShadow * ( mainLight.attenuation) +
+                    _RealTimeShadowColor * (1.0 - mainLight.attenuation);
 
     // 3) Pick darkest color
     return min(bakedGI, realtimeShadow);
