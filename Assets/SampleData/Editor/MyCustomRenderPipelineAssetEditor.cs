@@ -52,6 +52,7 @@ namespace App
 
 
             public static GUIContent customeMenu = new GUIContent("CustomMenu");
+            public static GUIContent noselfShadow = new GUIContent("NoSelfShadowLayer");
         }
 
         AnimBool m_ShowSoftParticles = new AnimBool();
@@ -172,7 +173,7 @@ namespace App
         private static int GuiLayerMask(int layerMask)
         {
             
-            int val = EditorGUILayout.MaskField(
+            int val = EditorGUILayout.MaskField( Styles.noselfShadow,
                InternalEditorUtility.LayerMaskToConcatenatedLayersMask(layerMask),
                InternalEditorUtility.layers);
             var tempMask = InternalEditorUtility.ConcatenatedLayersMaskToLayerMask(val);

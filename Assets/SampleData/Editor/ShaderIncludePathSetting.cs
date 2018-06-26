@@ -14,9 +14,9 @@ namespace App
         {
             return new[]
             {
-            "Assets/UnitySoftware/ScriptableRenderPipeline/Core/",
-            "Assets/UnitySoftware/ScriptableRenderPipeline/LightWeightPipeline/",
-        };
+                "Assets/UnitySoftware/ScriptableRenderPipeline/Core/",
+                "Assets/UnitySoftware/ScriptableRenderPipeline/LightWeightPipeline/",
+            };
         }
     }
 }
