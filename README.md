@@ -9,28 +9,30 @@ Read this in other languages: English, [日本語](README.ja.md)<br />
 
 ## Image
 
-![alt text](docs/img/MixShadow.png)
+### Customed RenderPipeline
+<img src="docs/img/MixShadow.png" width="480px" /> <br />
 
+* Realtime shadow renders blued. Baked shadow renders blacked.
 
-Non-Customized "LWRP" renders like this.
+### Non-Customized "LWRP" 
+Non-Customized "LWRP" renders like this.<br />
+The ground is recieved realtime shadow from BG Objcets.
 
-![alt text](docs/img/NG_Pattern1.png)
-
-
+<img src="docs/img/NG_Pattern1.png" width="320px" /> <br />
 
 
 ## RenderPass Flow
 
-![alt text](docs/img/1st_step.png)<br/>
+<img src="docs/img/1st_step.png" width="320px" /> <br />
 1.Generate ShadowMap renders only Character.
 
-![alt text](docs/img/2nd_step.png)<br/>
+<img src="docs/img/2nd_step.png" width="320px" /> <br />
 2.Rendering BG Objects with ShadowMap(CharacterOnly)
 
-![alt text](docs/img/3rd_step.png)<br/>
+<img src="docs/img/3rd_step.png" width="320px" /> <br />
 3.Rebdering Character to ShadowMap.
 
-![alt text](docs/img/4th_step.png)<br/>
+<img src="docs/img/4th_step.png" width="320px" /> <br />
 4.Render Character with ShadowMap.
 
 
