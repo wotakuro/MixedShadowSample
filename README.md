@@ -37,7 +37,7 @@ The ground is recieved realtime shadow from BG Objcets.
 
 
 ## Why?
- - Reduce the rendering cost.Because we should only care around the Character.<br/>
+ - This makes the rendering shadow cost lower.Because we should only care around the Character.<br/>
  - We can make ShadowMapTexture lower resolution because the shadow distance become shorter.<br/>
  - BG shadows are baked. So its quality is high.
 
