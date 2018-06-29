@@ -20,21 +20,21 @@ Read this in other languages: [English](README.ja.md), 日本語 <br />
 
 ## RenderPassの流れについて
 
-![alt text](docs/1st_step.png)<br/>
+![alt text](docs/img/1st_step.png)<br/>
 始めにキャラクターだけのShadowMapを生成します
 
-![alt text](docs/2nd_step.png)<br/>
+![alt text](docs/img/2nd_step.png)<br/>
 キャラクターだけのShadowMapを適応して背景を描きます
 
-![alt text](docs/3rd_step.png)
+![alt text](docs/img/3rd_step.png)<br/>
 キャラクターだけのShadowMapに背景オブジェクトも描き足します
 
-![alt text](docs/4th_step.png)
+![alt text](docs/img/4th_step.png)<br/>
 最後にキャラクターを描画します
 
 
 
 ## これを行う理由について
-・キャラクターの周りだけをリアルタイムで処理するようにする事で影の描画負荷を抑えます
-・近距離のみで済むのでShadowの解像度を抑えられます
+・キャラクターの周りだけをリアルタイムで処理するようにする事で影の描画負荷を抑えます<br/>
+・近距離のみで済むのでShadowの解像度を抑えられます<br/>
 ・背景の影はBakeしたものなので高品質です。

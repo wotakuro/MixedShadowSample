@@ -4,7 +4,7 @@ Read this in other languages: English, [日本語](README.ja.md)<br />
 
 
 ## Original Source
-  https://github.com/Unity-Technologies/ScriptableRenderPipeline
+  https://github.com/Unity-Technologies/ScriptableRenderPipeline <br />
   Customized from "LWRP 1.1.8-preview".
 
 ## Image
@@ -14,23 +14,23 @@ Read this in other languages: English, [日本語](README.ja.md)<br />
 
 Non-Customized "LWRP" renders like this.
 
-![alt text](docs/NG_Pattern1.png)
+![alt text](docs/img/NG_Pattern1.png)
 
 
 
 
 ## RenderPass Flow
 
-![alt text](docs/1st_step.png)<br/>
+![alt text](docs/img/1st_step.png)<br/>
 1.Generate ShadowMap renders only Character.
 
-![alt text](docs/2nd_step.png)<br/>
+![alt text](docs/img/2nd_step.png)<br/>
 2.Rendering BG Objects with ShadowMap(CharacterOnly)
 
-![alt text](docs/3rd_step.png)<br/>
+![alt text](docs/img/3rd_step.png)<br/>
 3.Rebdering Character to ShadowMap.
 
-![alt text](docs/4th_step.png)<br/>
+![alt text](docs/img/4th_step.png)<br/>
 4.Render Character with ShadowMap.
 
 
