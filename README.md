@@ -23,16 +23,16 @@ The ground is recieved realtime shadow from BG Objcets.
 
 ## RenderPass Flow
 
-<img src="docs/img/1st_step.png" width="320px" /> <br />
+<img src="docs/img/1st_step.png" width="480px" /> <br />
 1.Generate ShadowMap renders only Character.
 
-<img src="docs/img/2nd_step.png" width="320px" /> <br />
+<img src="docs/img/2nd_step.png" width="480px" /> <br />
 2.Rendering BG Objects with ShadowMap(CharacterOnly)
 
-<img src="docs/img/3rd_step.png" width="320px" /> <br />
+<img src="docs/img/3rd_step.png" width="480px" /> <br />
 3.Rebdering Character to ShadowMap.
 
-<img src="docs/img/4th_step.png" width="320px" /> <br />
+<img src="docs/img/4th_step.png" width="480px" /> <br />
 4.Render Character with ShadowMap.
 
 

@@ -23,16 +23,16 @@ Read this in other languages: [English](README.ja.md), 日本語 <br />
 
 ## RenderPassの流れについて
 
-<img src="docs/img/1st_step.png" width="320px" /> <br />
+<img src="docs/img/1st_step.png" width="480px" /> <br />
 始めにキャラクターだけのShadowMapを生成します
 
-<img src="docs/img/2nd_step.png" width="320px" /> <br />
+<img src="docs/img/2nd_step.png" width="480px" /> <br />
 キャラクターだけのShadowMapを適応して背景を描きます
 
-<img src="docs/img/3rd_step.png" width="320px" /> <br />
+<img src="docs/img/3rd_step.png" width="480px" /> <br />
 キャラクターだけのShadowMapに背景オブジェクトも描き足します
 
-<img src="docs/img/4th_step.png" width="320px" /> <br />
+<img src="docs/img/4th_step.png" width="480px" /> <br />
 最後にキャラクターを描画します
 
 
